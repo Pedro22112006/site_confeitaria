@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Encanto - Página Inicial</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <!-- Cabeçalho e Menu de Navegação -->
+    <header>
+        <div class="container">
+            <h1>Doce Encanto</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Página Inicial</a></li>
+                    <li><a href="{{ url_for('cardapio') }}">Cardápio</a></li>
+                    <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+                    <li><a href="{{ url_for('contato') }}">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Página Inicial -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo ao Doce Encanto</h2>
+            <p>Delícias irresistíveis para todos os momentos!</p>
+        </div>
+    </section>
+
+    <!-- Produtos Populares -->
+    <section id="produtos">
+        <div class="container">
+            <h2>Produtos Populares</h2>
+            <p>Aqui estão alguns dos nossos produtos mais populares:</p>
+            <ul>
+                <li>Bolo de Chocolate - R$30,00</li>
+                <li>Brigadeiro Gourmet - R$25,00</li>
+                <li>Cheesecake de Frutas Vermelhas - R$40,00</li>
+                <li>Brownie de Nozes - R$35,00</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Valores e Missão -->
+    <section id="valores">
+        <div class="container">
+            <h2>Valores e Missão</h2>
+            <p>Nossa missão é oferecer os melhores doces, feitos com ingredientes de alta qualidade e muito carinho. Acreditamos na tradição, inovação e na satisfação total dos nossos clientes.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Doce Encanto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

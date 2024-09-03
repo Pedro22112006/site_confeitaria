@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Encanto - Sobre</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sobre.css') }}">
+</head>
+<body>
+    <!-- Cabeçalho e Menu de Navegação -->
+    <header>
+        <div class="header-content">
+            <h1>Doce Encanto</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Página Inicial</a></li>
+                    <li><a href="{{ url_for('cardapio') }}">Cardápio</a></li>
+                    <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+                    <li><a href="{{ url_for('contato') }}">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cabeçalho da Página Sobre -->
+    <section id="sobre-header">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Conheça a nossa história, missão e valores. Somos apaixonados por doces e dedicados a oferecer o melhor para você.</p>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Quem Somos</h3>
+                    <p>Fundada em 2024, a Doce Encanto nasceu do amor por confeitaria. Nossa equipe é dedicada a criar bolos e doces que não só satisfazem o paladar, mas também trazem um sorriso ao seu rosto.</p>
+                    <img src="https://img.freepik.com/fotos-premium/a-equipe-do-chef-prepara-fatias-de-bolo_13339-19737.jpg?w=900">
+                    <h3>Nossa Missão</h3>
+                    <p>Proporcionar uma experiência doce e inesquecível para todos os nossos clientes, utilizando receitas artesanais e ingredientes de alta qualidade. Estamos comprometidos em manter a tradição e a inovação em cada criação.</p>
+                </div>
+                <img src="https://www.tuacasa.com.br/wp-content/uploads/2020/03/bolos-decorados-00-1.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Doce Encanto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

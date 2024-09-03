@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Encanto - Cardápio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cardapio.css') }}">
+</head>
+<body>
+    <!-- Cabeçalho e Menu de Navegação -->
+    <header>
+        <div class="container">
+            <h1>Doce Encanto</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Página Inicial</a></li>
+                    <li><a href="{{ url_for('cardapio') }}">Cardápio</a></li>
+                    <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+                    <li><a href="{{ url_for('contato') }}">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cardápio -->
+    <section id="bolos-doces">
+        <div class="container">
+            <h2>Bolos e Doces</h2>
+            <p>Confira os detalhes dos nossos bolos e doces:</p>
+            <h3>Bolos</h3>
+            <ul>
+                <li>Bolo de Chocolate - Ingredientes: Chocolate, Farinha, Açúcar, Ovos. Preço: R$30,00</li>
+                <li>Bolo de Morango - Ingredientes: Morango, Creme, Farinha, Açúcar. Preço: R$35,00</li>
+            </ul>
+            <div class="gallery">
+                <img src="https://voalzira.com/wp-content/uploads/2020/12/Bolo-de-Festa-de-Chocolate-com-Confete-e-Bis-1024x1024.jpg">
+                <img src="https://img.cybercook.com.br/receitas/12/bolo-de-morango-3-840x480.jpeg?q=75">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8lxKDMlYbtCSYSP7UZ7Z1SsRcE5Fkmv8curQlGo3Z7t7PASPWZtQTRzrPucoLJnSGfIAT68b2oaEOXCEs9U_wdm59PYVTWuLDVqPrZoZuvNU4u9OzP0flJV4ah_bc0ImgfYcpwRdX-vg/s1600/bolo+de+baunilha+de+microondas.jpg">
+                <img src="https://feed.continente.pt/media/5teiin1c/bolo-red-velvet-receita.jpg?anchor=center&mode=crop&width=826&height=620&rnd=133355339914930000&format=webp">
+            </div>
+            <h3>Doces</h3>
+            <ul>
+                <li>Brigadeiro Gourmet - Ingredientes: Chocolate, Leite Condensado, Manteiga. Preço: R$25,00</li>
+                <li>Brownie de Nozes - Ingredientes: Chocolate, Nozes, Farinha, Açúcar. Preço: R$35,00</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Doce Encanto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
